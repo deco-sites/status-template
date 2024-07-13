@@ -42,7 +42,7 @@ export default function Section(props: Props) {
   );
 
   return (
-    <header className="py-4 flex justify-between" hx-boost="true" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
+    <header className="py-4 flex justify-between items-center" hx-boost="true" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
       {image}
       <div class="flex gap-2">
         {reportProblemLink}
