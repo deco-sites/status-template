@@ -10,7 +10,7 @@ export interface Props {
 
 export default function Container({ maxWidth = "max-w-screen-xl", sections }: Props) {
   return (
-    <div className={`container mx-auto px-4 flex flex-col gap-4 ${maxWidth}`}>
+    <div className={`container mx-auto px-4 flex flex-col gap-4 ${maxWidth}`} hx-boost="true" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
       {sections.map(({ Component, props }, index) => (
         <Component key={index.toString()} {...props} />
       ))}

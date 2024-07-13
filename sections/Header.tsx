@@ -22,13 +22,13 @@ export interface Props {
 
 export default function Section(props: Props) {
   const reportProblemLink = props.reportLink ? (
-    <a class="btn btn-secondary" hx-get={props.reportLink} hx-trigger="click" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
+    <a class="btn btn-secondary" href={props.reportLink}>
       Reportar Problema
     </a>
   ) : null;
 
   const subscribeLink = props.subscribeLink ? (
-    <a class="btn btn-primary" hx-get={props.subscribeLink} hx-trigger="click" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
+    <a class="btn btn-primary" href={props.subscribeLink}>
       Increva-se
     </a>
   ) : null;
