@@ -49,9 +49,15 @@
     "name": "gsbenevides2",
     "path": "/gsbenevides2"
   },
-  "/.deco/blocks/pages-My%2520New%2520Page-814897.json": {
-    "name": "My New Page",
-    "path": "/thalys",
+  "/.deco/blocks/pages-Send%2520Report-961492.json": {
+    "name": "Send Report",
+    "path": "/report",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
+  },
+  "/.deco/blocks/pages-Subscribe-374914.json": {
+    "name": "Subscribe",
+    "path": "/subscribe",
     "blockType": "pages",
     "__resolveType": "website/pages/Page.tsx"
   }

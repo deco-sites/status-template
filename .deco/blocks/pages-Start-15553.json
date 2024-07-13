@@ -8,18 +8,56 @@
         {
           "__resolveType": "site/sections/Header.tsx",
           "url": "https://deco.cx/live/invoke/deco-sites/std/loaders/x/image.ts?src=https%3A%2F%2Fozksgdmyrqcxcwhnbepg.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fassets%2F530%2F1e79cc6e-caeb-4289-a689-b9fa1e6968aa&fit=cover&width=240",
-          "altText": "Logo"
+          "altText": "Logo",
+          "link": "https://deco.cx",
+          "openInNewTab": true,
+          "reportLink": "/report",
+          "subscribeLink": "/subscribe"
         },
         {
           "__resolveType": "site/sections/SecondSection.tsx",
-          "title": "We’re fully operational",
-          "subtitle": "We’re not aware of any issues affecting our systems."
+          "subtitle": "We’re not aware of any issues affecting our systems.",
+          "title": "We’re fully operational"
         },
         {
-          "__resolveType": "site/sections/StatusDetails.tsx"
+          "__resolveType": "site/sections/StatusDetails.tsx",
+          "title": "System status",
+          "components": [
+            {
+              "status": "ok",
+              "items": [
+                {
+                  "status": "ok",
+                  "name": "Componente 1",
+                  "description": "Vitrines"
+                }
+              ],
+              "name": "Storefront",
+              "description": "Loja "
+            },
+            {
+              "status": "warning",
+              "items": [
+                {
+                  "status": "error",
+                  "name": "Componente 1",
+                  "description": "Pagamento"
+                }
+              ],
+              "name": "Checkout",
+              "description": "Vendas"
+            }
+          ]
         },
         {
-          "__resolveType": "site/sections/PastIncidents.tsx"
+          "__resolveType": "site/sections/PastIncidents.tsx",
+          "title": "Past Incidents",
+          "components": [
+            {
+              "data": "10, Jul, 2024",
+              "description": "This is a description"
+            }
+          ]
         }
       ],
       "maxWidth": "max-w-screen-md"

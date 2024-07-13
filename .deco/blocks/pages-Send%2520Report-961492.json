@@ -1,0 +1,33 @@
+{
+  "name": "Send Report",
+  "path": "/report",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Header.tsx",
+          "url": "https://deco.cx/live/invoke/deco-sites/std/loaders/x/image.ts?src=https%3A%2F%2Fozksgdmyrqcxcwhnbepg.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fassets%2F530%2F1e79cc6e-caeb-4289-a689-b9fa1e6968aa&fit=cover&width=240",
+          "altText": "Logo",
+          "link": "/"
+        },
+        {
+          "__resolveType": "site/sections/RegisterToReportBugForm.tsx",
+          "url": "https://deco-grm3zrxxba-uc.a.run.app/reports",
+          "successMessage": "Enviado com sucesso, nossa equipe já vai ver o que está acontecendo.",
+          "errorMessage": "Erro, recarregue a página e tente novamente.",
+          "formTitle": "Enviar Reporte",
+          "formDescription": "Envie seu reporte de problema para análise do nosso time."
+        }
+      ],
+      "maxWidth": "max-w-screen-md"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
