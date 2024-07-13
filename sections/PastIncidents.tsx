@@ -21,7 +21,7 @@ export default function Section({ title = "Past Incidents", components = [] }: P
       <h2 className="text-2xl font-bold mb-2">{title}</h2>
       {components.map((component) => (
         <a href={`/incidents/${component.slug}`} className="py-2 flex flex-col gap-2 cursor-pointer">
-          <h3 className="font-bold border-b last:border-b-0 py-2">{component.title}</h3>
+          <h3 className="font-bold border-b text-green-600 hover:text-green-800 underline last:border-b-0 py-2">{component.title}</h3>
           <p className=" font-bold ">{dateFormater(component.date)}</p>
           <span>{component.excerpt}</span>
         </a>
