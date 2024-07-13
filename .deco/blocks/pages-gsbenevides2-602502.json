@@ -3,14 +3,20 @@
   "path": "/gsbenevides2",
   "sections": [
     {
-      "__resolveType": "site/sections/Header.tsx",
-      "altText": "Logo",
-      "url": "https://deco.cx/live/invoke/deco-sites/std/loaders/x/image.ts?src=https%3A%2F%2Fozksgdmyrqcxcwhnbepg.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fassets%2F530%2F1e79cc6e-caeb-4289-a689-b9fa1e6968aa&fit=cover&width=240",
-      "link": "https://deco.cx",
-      "openInNewTab": true
-    },
-    {
-      "__resolveType": "site/sections/StatusDetails.tsx"
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Header.tsx",
+          "url": "https://deco.cx/live/invoke/deco-sites/std/loaders/x/image.ts?src=https%3A%2F%2Fozksgdmyrqcxcwhnbepg.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fassets%2F530%2F1e79cc6e-caeb-4289-a689-b9fa1e6968aa&fit=cover&width=240",
+          "altText": "Logo Deco",
+          "link": "https://deco.cx",
+          "openInNewTab": true
+        },
+        {
+          "__resolveType": "site/sections/StatusDetails.tsx"
+        }
+      ],
+      "maxWidth": "max-w-screen-md"
     }
   ],
   "seo": {
