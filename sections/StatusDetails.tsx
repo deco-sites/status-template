@@ -120,8 +120,8 @@ export default function Section({
       <h2 className="bg-gray-100 text-2xl p-4">{title}</h2>
       {components.map((component) => (
         <div className="collapse border-b last:border-b-0">
-          <input type="checkbox" />
-          <div className="collapse-title font-bold text-base px-4 py-4 list-none flex gap-2 items-center cursor-pointer">
+          <input id={component.name} type="checkbox" />
+          <label for={component.name} className="collapse-title font-bold text-base px-4 py-4 list-none flex gap-2 items-center cursor-pointer">
             {component.status === "warning" && warningIcon}
             {component.status === "error" && errorIcon}
             {component.status === "ok" && okIcon}
@@ -132,7 +132,7 @@ export default function Section({
               </svg>
             </div>
             <span className="font-normal text-gray-600">{component.items.length} Componentes</span>
-          </div>
+          </label>
           <ul className="collapse-content flex flex-col gap-4">
             {component.items.map((item) => (
               <li className="flex gap-2 items-center">
