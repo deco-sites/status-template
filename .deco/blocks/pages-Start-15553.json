@@ -12,11 +12,14 @@
         },
         {
           "__resolveType": "site/sections/SecondSection.tsx",
-          "title": "Tudo OK",
-          "subtitle": "Tudo Bem"
+          "title": "We’re fully operational",
+          "subtitle": "We’re not aware of any issues affecting our systems."
         },
         {
           "__resolveType": "site/sections/StatusDetails.tsx"
+        },
+        {
+          "__resolveType": "site/sections/PastIncidents.tsx"
         }
       ],
       "maxWidth": "max-w-screen-md"

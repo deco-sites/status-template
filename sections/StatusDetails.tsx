@@ -117,11 +117,11 @@ export default function Section({
       <h2 className="bg-gray-100 text-2xl p-4">{title}</h2>
       {components.map((component) => (
         <details className="border-b last:border-b-0">
-          <summary className="font-bold text-base px-4 py-2 list-none flex gap-2 items-center cursor-pointer">
+          <summary className="font-bold text-base px-4 py-4 list-none flex gap-2 items-center cursor-pointer">
             {component.status === "warning" && warningIcon}
             {component.status === "error" && errorIcon}
             {component.status === "ok" && okIcon}
-            <span>{component.name}</span>
+            <span className="text-black font-black">{component.name}</span>
             <div className="tooltip" data-tip={component.description}>
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-600">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
@@ -129,7 +129,7 @@ export default function Section({
             </div>
             <span className="font-normal text-gray-600">{component.items.length} Componentes</span>
           </summary>
-          <ul className="px-4 pb-2">
+          <ul className="p-4 flex flex-col gap-4">
             {component.items.map((item) => (
               <li className="flex gap-2 items-center">
                 {item.status === "warning" && warningIcon}
