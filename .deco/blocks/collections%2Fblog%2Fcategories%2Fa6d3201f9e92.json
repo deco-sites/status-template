@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/a6d3201f9e92",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "full outage",
+    "slug": "full outage"
+  }
+}

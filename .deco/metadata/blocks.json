@@ -64,5 +64,21 @@
   "/.deco/blocks/deco-blog.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/blog.ts"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fposts%2F453f28b246df.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Blogpost.ts"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fcategories%2Ffad0ef0d5c69.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Category.ts"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fcategories%2Fa6d3201f9e92.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Category.ts"
+  },
+  "/.deco/blocks/collections%2Fblog%2Fcategories%2Ff19921769cfd.json": {
+    "blockType": "loaders",
+    "__resolveType": "blog/loaders/Category.ts"
   }
 }

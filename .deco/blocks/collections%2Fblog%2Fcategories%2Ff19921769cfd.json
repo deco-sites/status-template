@@ -1,0 +1,8 @@
+{
+  "name": "collections/blog/categories/f19921769cfd",
+  "__resolveType": "blog/loaders/Category.ts",
+  "category": {
+    "name": "degrated performance",
+    "slug": "degrated performance"
+  }
+}

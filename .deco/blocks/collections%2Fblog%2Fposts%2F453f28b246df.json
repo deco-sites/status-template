@@ -1,0 +1,13 @@
+{
+  "name": "collections/blog/posts/453f28b246df",
+  "__resolveType": "blog/loaders/Blogpost.ts",
+  "post": {
+    "authors": [],
+    "categories": [],
+    "title": "Degraded performance for checkout operations",
+    "excerpt": "We are currently investigating an issue in our checkout modules.  Users finishing the sales flow may be experiencing problems at checkou",
+    "content": "<p>This incident has been resolved.  </p><p></p><p>Our automated monitoring system identified that VTEX's order flow experienced a coordinated novel cascading failure due to an unwanted interaction between one of our systems replicated across multiple datacenters and one of our cloud provider's highly available databases.  </p><p></p><p>While our systems are designed to withstand failures of multiple replicas across multiple datacenters we do rarely face coordinated failures across them. Our learnings today will inform additional investments to prevent similar incidents from happening in the future.  </p><p></p><p>It's worth noting that even though we quickly reverted both systems to their previously known healthy status, a series of side effects had already taken place extending the duration of the incident. Such side effects have been now mitigated including indexing with the exception of some auditing messages still being processed.  </p><p></p><p>We want to acknowledge that this incident resulted in two separate periods of service unavailability.  </p><p></p><p>A complete Incident Report will be published in this page as soon as possible.  </p><p></p><p><strong>Summary</strong>  </p><p>On July 09, from 17:57 UTC to 19:15 and from 19:29 to 21:02 UTC, shoppers experienced errors while placing orders. </p><p>Our global sales flow was affected for 78 minutes on the first event and for 91 minutes on the second one. </p><p>We will continue to work to prevent this type of incident and similar incidents from happening again.  </p><p></p><p>Timeline  </p><ul><li><p>At 17:57 UTC, our incident response team was notified of the issue. </p></li><li><p>At 19:15 UTC, our mitigation strategy partially recovered the sales flow. </p></li><li><p>At 19:29 UTC, as orders returned, a new set of errors were identified and the sales flow was out again. The team started to act and mitigation actions were started. </p></li><li><p>At 21:02 UTC, the incident was fully mitigated</p></li></ul>",
+    "slug": "01",
+    "date": "2024-07-09"
+  }
+}
