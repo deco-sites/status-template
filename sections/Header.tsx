@@ -1,4 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   /**@title URL da Imagem */
@@ -35,7 +36,7 @@ export default function Section(props: Props) {
 
   const image = props.link ? (
     <a href={props.link} target={props.openInNewTab ? "_blank" : "_self"}>
-      <img src={props.url} alt={props.altText} />
+      <Image width={87} src={props.url} alt={props.altText} class="w-[87px]" sizes="(max-width: 640px) 100vw, 30vw" decoding="async" loading="lazy" />
     </a>
   ) : (
     <img src={props.url} alt={props.altText} />
