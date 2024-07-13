@@ -80,5 +80,11 @@
   "/.deco/blocks/collections%2Fblog%2Fcategories%2Ff19921769cfd.json": {
     "blockType": "loaders",
     "__resolveType": "blog/loaders/Category.ts"
+  },
+  "/.deco/blocks/pages-Incidente-462938.json": {
+    "name": "Incidente",
+    "path": "/incidents/:slug",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

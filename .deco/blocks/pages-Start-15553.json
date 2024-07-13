@@ -55,7 +55,8 @@
           "components": [
             {
               "data": "10, Jul, 2024",
-              "description": "This is a description"
+              "description": "This is a description",
+              "__resolveType": "collections/blog/posts/453f28b246df"
             }
           ]
         }

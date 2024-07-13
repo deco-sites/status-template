@@ -1,0 +1,38 @@
+{
+  "name": "Incidente",
+  "path": "/incidents/:slug",
+  "sections": [
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "__resolveType": "site/sections/Header.tsx",
+          "url": "https://deco.cx/live/invoke/deco-sites/std/loaders/x/image.ts?src=https%3A%2F%2Fozksgdmyrqcxcwhnbepg.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fassets%2F530%2F1e79cc6e-caeb-4289-a689-b9fa1e6968aa&fit=cover&width=240",
+          "altText": "Logo",
+          "link": "https://deco.cx",
+          "openInNewTab": true,
+          "reportLink": "/report",
+          "subscribeLink": "/subscribe"
+        },
+        {
+          "__resolveType": "site/sections/IncidentPage.tsx",
+          "page": {
+            "__resolveType": "blog/loaders/BlogPostPage.ts",
+            "slug": {
+              "__resolveType": "website/functions/requestToParam.ts",
+              "param": "slug"
+            }
+          }
+        }
+      ],
+      "maxWidth": "max-w-screen-md"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
