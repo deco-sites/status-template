@@ -23,13 +23,13 @@ export interface Props {
 
 export default function Section(props: Props) {
   const reportProblemLink = props.reportLink ? (
-    <a class="btn btn-secondary" href={props.reportLink}>
+    <a class="btn bg-transparent hover:bg-secondary border-secondary" href={props.reportLink}>
       Reportar Problema
     </a>
   ) : null;
 
   const subscribeLink = props.subscribeLink ? (
-    <a class="btn btn-primary" href={props.subscribeLink}>
+    <a class="btn bg-transparent border-secondary hover:bg-primary hover:border-primary hover:text-white" href={props.subscribeLink}>
       Increva-se
     </a>
   ) : null;
