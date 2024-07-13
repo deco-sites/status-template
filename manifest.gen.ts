@@ -8,9 +8,11 @@ import * as $$$$$$0 from "./sections/Container.tsx";
 import * as $$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$2 from "./sections/Header.tsx";
 import * as $$$$$$3 from "./sections/ItWorks.tsx";
-import * as $$$$$$4 from "./sections/SecondSection.tsx";
-import * as $$$$$$5 from "./sections/StatusDetails.tsx";
-import * as $$$$$$6 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$4 from "./sections/RegisterToReportBugForm.tsx";
+import * as $$$$$$5 from "./sections/RegisterToUpdatesForm.tsx";
+import * as $$$$$$6 from "./sections/SecondSection.tsx";
+import * as $$$$$$7 from "./sections/StatusDetails.tsx";
+import * as $$$$$$8 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "sections": {
@@ -18,9 +20,11 @@ const manifest = {
     "site/sections/Footer.tsx": $$$$$$1,
     "site/sections/Header.tsx": $$$$$$2,
     "site/sections/ItWorks.tsx": $$$$$$3,
-    "site/sections/SecondSection.tsx": $$$$$$4,
-    "site/sections/StatusDetails.tsx": $$$$$$5,
-    "site/sections/Theme/Theme.tsx": $$$$$$6,
+    "site/sections/RegisterToReportBugForm.tsx": $$$$$$4,
+    "site/sections/RegisterToUpdatesForm.tsx": $$$$$$5,
+    "site/sections/SecondSection.tsx": $$$$$$6,
+    "site/sections/StatusDetails.tsx": $$$$$$7,
+    "site/sections/Theme/Theme.tsx": $$$$$$8,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,

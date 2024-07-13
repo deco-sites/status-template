@@ -11,12 +11,16 @@
           "altText": "Logo"
         },
         {
-          "__resolveType": "site/sections/SecondSection.tsx",
-          "title": "Tudo OK",
-          "subtitle": "Tudo Bem"
+          "__resolveType": "site/sections/RegisterToUpdatesForm.tsx",
+          "url": "https://deco-grm3zrxxba-uc.a.run.app/emails",
+          "formTitle": "Receba atualizações:",
+          "formDescription": "Inscreva-se para receber ",
+          "successMessage": "Inscrição feita com sucesso.",
+          "errorMessage": "Erro, recarregue a página e tente novamente."
         },
         {
-          "__resolveType": "site/sections/StatusDetails.tsx"
+          "__resolveType": "site/sections/RegisterToReportBugForm.tsx",
+          "url": "https://deco-grm3zrxxba-uc.a.run.app/reports"
         }
       ],
       "maxWidth": "max-w-screen-md"
