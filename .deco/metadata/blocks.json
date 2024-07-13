@@ -90,5 +90,11 @@
   "/.deco/blocks/Neutral%20Nosso.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/pages-My%2520New%2520Page-879427.json": {
+    "name": "My New Page",
+    "path": "/example-path",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
