@@ -44,5 +44,11 @@
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/pages-My%2520New%2520Page-814897.json": {
+    "name": "My New Page",
+    "path": "/thalys",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }
