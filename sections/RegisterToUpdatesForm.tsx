@@ -59,16 +59,19 @@ export default function Section(props: SectionProps<typeof loader>) {
   }
 
   return (
-    <form className="flex flex-col gap-4" hx-post={useSection<typeof Section>({ props })} hx-trigger="submit" hx-swap="outerHTML" hx-target="closest section" hx-indicator="true">
+    <form id="sendForm" className="flex flex-col gap-4 group" hx-post={useSection<typeof Section>({ props })} hx-trigger="submit" hx-swap="outerHTML" hx-target="closest section" hx-indicator="#sendForm">
       <h2 className="text-2xl">{props.formTitle}</h2>
       <p>{props.formDescription}</p>
-      <label class="form-control w-full">
+      <label class="form-control w-full group-[.htmx-request]:pointer-events-none">
         <div class="label pt-0">
           <span class="label-text">Qual é seu email?</span>
         </div>
-        <input name="email" type="text" pattern="[^@]+@[^\.]+\..+" placeholder="Digite seu e-mail favorito aqui:" class="input input-bordered w-full focus:outline-none" />
+        <input name="email" type="text" pattern="[^@]+@[^\.]+\..+" placeholder="Digite seu e-mail favorito aqui:" class="input input-bordered w-full focus:outline-none group-[.htmx-request]:pointer-events-none" />
       </label>
-      <button class="btn btn-primary">Increva-se</button>
+      <button class="btn btn-primary group-[.htmx-request]:btn-disabled group-[.htmx-request]:pointer-events-none">
+        <span className="btnText group-[.htmx-request]:hidden">Increva-se</span>
+        <span className="loading loading-spinner loading-xs hidden group-[.htmx-request]:block"></span>
+      </button>
     </form>
   );
 }
