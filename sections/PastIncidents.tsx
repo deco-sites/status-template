@@ -17,7 +17,7 @@ export default function Section({ title = "Past Incidents", components = [] }: P
     });
   };
   return (
-    <div className="w-full">
+    <div className="w-full" hx-boost="true" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
       <h2 className="text-2xl font-bold mb-2">{title}</h2>
       {components.map((component) => (
         <a href={`/incidents/${component.slug}`} className="py-2 flex flex-col gap-2 cursor-pointer">

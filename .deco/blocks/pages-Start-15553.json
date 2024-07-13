@@ -6,7 +6,8 @@
       "__resolveType": "website/sections/Seo/Seo.tsx",
       "title": "Home Page",
       "description": "Veja os status dos nossos sistemas.",
-      "type": "website"
+      "type": "website",
+      "noIndexing": false
     },
     {
       "__resolveType": "site/sections/Container.tsx",
