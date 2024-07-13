@@ -3,6 +3,12 @@
   "path": "/report",
   "sections": [
     {
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "title": "Reportar Problema",
+      "description": "Envie um reporte de problema ou falha.",
+      "type": "website"
+    },
+    {
       "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {

@@ -3,6 +3,12 @@
   "path": "/subscribe",
   "sections": [
     {
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "title": "Increva-se",
+      "description": "Inscreva-se para receber atualizações e infomações de instabilidade.",
+      "type": "website"
+    },
+    {
       "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {

@@ -21,41 +21,32 @@ export interface Props {
 }
 
 export default function Section(props: Props) {
-  if (props.link) {
-    return (
-      <header className="py-4 flex justify-between">
-        <a href={props.link} target={props.openInNewTab ? "_blank" : "_self"}>
-          <img src={props.url} alt={props.altText} />
-        </a>
-        <div class=" flex gap-2">
-          {props.reportLink && (
-            <a class="btn btn-secondary" href={props.reportLink}>
-              Reportar Problema
-            </a>
-          )}
-          {props.subscribeLink && (
-            <a class="btn btn-primary" href={props.subscribeLink}>
-              Increva-se
-            </a>
-          )}
-        </div>
-      </header>
-    );
-  }
+  const reportProblemLink = props.reportLink ? (
+    <a class="btn btn-secondary" hx-get={props.reportLink} hx-trigger="click" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
+      Reportar Problema
+    </a>
+  ) : null;
+
+  const subscribeLink = props.subscribeLink ? (
+    <a class="btn btn-primary" hx-get={props.subscribeLink} hx-trigger="click" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
+      Increva-se
+    </a>
+  ) : null;
+
+  const image = props.link ? (
+    <a href={props.link} target={props.openInNewTab ? "_blank" : "_self"}>
+      <img src={props.url} alt={props.altText} />
+    </a>
+  ) : (
+    <img src={props.url} alt={props.altText} />
+  );
+
   return (
     <header className="py-4 flex justify-between">
-      <img src={props.url} alt={props.altText} />
-      <div class=" flex gap-2">
-        {props.reportLink && (
-          <a class="btn btn-secondary" href={props.reportLink}>
-            Reportar Problema
-          </a>
-        )}
-        {props.subscribeLink && (
-          <a class="btn btn-primary" href={props.subscribeLink}>
-            Increva-se
-          </a>
-        )}
+      {image}
+      <div class="flex gap-2">
+        {reportProblemLink}
+        {subscribeLink}
       </div>
     </header>
   );

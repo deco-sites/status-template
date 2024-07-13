@@ -29,10 +29,13 @@
     },
     {
       "__resolveType": "Footer"
+    },
+    {
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "title": "Detalhes do Incidente",
+      "description": "Veja os detalhes os detalhes do Incidente",
+      "type": "website"
     }
   ],
-  "seo": {
-    "__resolveType": "website/sections/Seo/SeoV2.tsx"
-  },
   "__resolveType": "website/pages/Page.tsx"
 }

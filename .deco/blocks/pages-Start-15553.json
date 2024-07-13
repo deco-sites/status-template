@@ -3,6 +3,12 @@
   "path": "/",
   "sections": [
     {
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "title": "Home Page",
+      "description": "Veja os status dos nossos sistemas.",
+      "type": "website"
+    },
+    {
       "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
