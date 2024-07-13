@@ -44,5 +44,11 @@
   "/.deco/blocks/deco-htmx.json": {
     "blockType": "apps",
     "__resolveType": "site/apps/deco/htmx.ts"
+  },
+  "/.deco/blocks/pages-gsbenevides2-602502.json": {
+    "name": "gsbenevides2",
+    "path": "/gsbenevides2",
+    "blockType": "pages",
+    "__resolveType": "website/pages/Page.tsx"
   }
 }

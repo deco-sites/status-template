@@ -32,23 +32,13 @@
   "githooks": {
     "pre-commit": "check"
   },
-  "exclude": [
-    "node_modules",
-    "static/",
-    "README.md",
-    "_fresh",
-    "**/_fresh/*",
-    ".deco/**"
-  ],
+  "exclude": ["node_modules", "static/", "README.md", "_fresh", "**/_fresh/*", ".deco/**"],
   "lint": {
     "rules": {
-      "tags": [
-        "fresh",
-        "recommended"
-      ]
+      "tags": ["fresh", "recommended"]
     }
   },
-  "nodeModulesDir": false,
+  "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
