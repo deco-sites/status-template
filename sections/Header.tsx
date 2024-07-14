@@ -50,7 +50,7 @@ export default function Section(props: Props) {
 
   const voltar =
     props.showGoHome && props.homePath ? (
-      <a href={props.homePath} hx-boost="false" hx-push-url={props.homePath} className="btn bg-transparent border-secondary hover:bg-primary hover:border-primary hover:text-white mb-4 rounded-md">
+      <a href={props.homePath} hx-boost="false" hx-push-url={props.homePath} className="btn bg-transparent border-secondary hover:bg-primary hover:border-primary hover:text-white rounded-md">
         Ir para home
       </a>
     ) : null;
