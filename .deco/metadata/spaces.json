@@ -809,7 +809,8 @@
           "viewId": "Theme Selector",
           "id": "themes::Theme%20Selector::palette::Theme%20Selector::%7B%7D",
           "state": {
-            "__signal": null
+            "__signal": null,
+            "value": null
           }
         },
         "themes::Theme%20Viewer::palette::Theme%20Viewer::%7B%7D": {
