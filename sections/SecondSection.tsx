@@ -52,3 +52,7 @@ export default function Section(props: Props) {
     </div>
   );
 }
+
+export function LoadingFallback() {
+  return <div class="skeleton h-32 w-full"></div>;
+}

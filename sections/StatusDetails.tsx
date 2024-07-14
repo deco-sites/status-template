@@ -161,3 +161,7 @@ export default function Section({
     </div>
   );
 }
+
+export function LoadingFallback() {
+  return <div class="skeleton h-80 w-full"></div>;
+}
