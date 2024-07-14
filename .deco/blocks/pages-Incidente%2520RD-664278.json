@@ -1,22 +1,17 @@
 {
-  "name": "Incidente",
-  "path": "/incidents/:slug",
+  "name": "Incidente RD",
+  "path": "/rd/incidents/:slug",
   "sections": [
     {
       "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "__resolveType": "Header Default com Voltar"
+          "__resolveType": "Header RD com Voltar"
         },
         {
           "__resolveType": "site/sections/IncidentPage.tsx",
           "page": {
-            "post": {},
-            "__resolveType": "blog/loaders/BlogPostPage.ts",
-            "slug": {
-              "__resolveType": "website/functions/requestToParam.ts",
-              "param": "slug"
-            }
+            "__resolveType": "IncidentPageLoader"
           }
         }
       ],

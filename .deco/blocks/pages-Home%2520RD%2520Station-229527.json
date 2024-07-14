@@ -1,0 +1,51 @@
+{
+  "name": "Home RD Station",
+  "path": "/rd",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Seo/Seo.tsx",
+      "title": "Home Page",
+      "description": "Veja os status dos nossos sistemas.",
+      "type": "website",
+      "noIndexing": false
+    },
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "__resolveType": "Header RD"
+        },
+        {
+          "__resolveType": "site/sections/SecondSection.tsx",
+          "statusResponse": {
+            "url": "https://status.rdstation.com/proxy/status.rdstation.com",
+            "__resolveType": "site/loaders/SeccondSection/incident.ts"
+          }
+        },
+        {
+          "__resolveType": "site/sections/StatusDetails.tsx",
+          "title": "System status",
+          "components": {
+            "__resolveType": "SystemStatusIncident"
+          }
+        },
+        {
+          "__resolveType": "site/sections/PastIncidents.tsx",
+          "title": "Past Incidents",
+          "components": {
+            "__resolveType": "IncidentsIncidentIO"
+          },
+          "prefix": "/rd"
+        }
+      ],
+      "maxWidth": "max-w-screen-md"
+    },
+    {
+      "__resolveType": "Footer"
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
