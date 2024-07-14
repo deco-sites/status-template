@@ -1,3 +1,5 @@
+import { RichText } from "apps/admin/widgets.ts";
+
 type Status = "ok" | "warning" | "error";
 
 interface Component {
@@ -20,7 +22,7 @@ interface Component {
 
 export interface Props {
   /**@title Título da Seção */
-  title: string;
+  title: RichText;
   /**@title Componentes do Sistema */
   components: Component[];
 }

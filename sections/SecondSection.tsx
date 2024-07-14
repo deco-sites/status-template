@@ -1,7 +1,9 @@
+import { RichText } from "apps/admin/widgets.ts";
+
 type Status = "ok" | "warning" | "error";
 export interface Props {
   /**@title Titulo*/
-  title: string;
+  title: RichText;
   /**@title Subtitulo*/
   subtitle: string;
   /**@title Status*/
