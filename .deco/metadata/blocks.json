@@ -90,5 +90,21 @@
   "/.deco/blocks/Neutral%20Nosso.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Theme/Theme.tsx"
+  },
+  "/.deco/blocks/SeccondSectionIncident.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/SecondSection.tsx"
+  },
+  "/.deco/blocks/SystemStatusIncident.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/SystemStatus/incident.ts"
+  },
+  "/.deco/blocks/IncidentsIncidentIO.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/PastIncidents/incident.ts"
+  },
+  "/.deco/blocks/IncidentPageLoader.json": {
+    "blockType": "loaders",
+    "__resolveType": "site/loaders/IncidentPage/incident.ts"
   }
 }

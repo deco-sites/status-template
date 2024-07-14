@@ -5,6 +5,10 @@
 import * as $$$$$$$$$$$0 from "./apps/deco/blog.ts";
 import * as $$$$$$$$$$$1 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$2 from "./apps/site.ts";
+import * as $$$0 from "./loaders/IncidentPage/incident.ts";
+import * as $$$1 from "./loaders/PastIncidents/incident.ts";
+import * as $$$2 from "./loaders/SeccondSection/incident.ts";
+import * as $$$3 from "./loaders/SystemStatus/incident.ts";
 import * as $$$$$$0 from "./sections/Container.tsx";
 import * as $$$$$$1 from "./sections/Footer.tsx";
 import * as $$$$$$2 from "./sections/Header.tsx";
@@ -18,6 +22,12 @@ import * as $$$$$$9 from "./sections/StatusDetails.tsx";
 import * as $$$$$$10 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
+  "loaders": {
+    "site/loaders/IncidentPage/incident.ts": $$$0,
+    "site/loaders/PastIncidents/incident.ts": $$$1,
+    "site/loaders/SeccondSection/incident.ts": $$$2,
+    "site/loaders/SystemStatus/incident.ts": $$$3,
+  },
   "sections": {
     "site/sections/Container.tsx": $$$$$$0,
     "site/sections/Footer.tsx": $$$$$$1,

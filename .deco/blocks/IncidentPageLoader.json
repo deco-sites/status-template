@@ -1,0 +1,8 @@
+{
+  "__resolveType": "site/loaders/IncidentPage/incident.ts",
+  "slug": {
+    "__resolveType": "website/functions/requestToParam.ts",
+    "param": "slug"
+  },
+  "url": "https://status.rdstation.com/proxy/status.rdstation.com"
+}

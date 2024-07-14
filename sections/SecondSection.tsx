@@ -1,13 +1,16 @@
 import { RichText } from "apps/admin/widgets.ts";
 
 type Status = "ok" | "warning" | "error";
-export interface Props {
+export interface StatusReponse {
   /**@title Titulo*/
-  title: RichText;
+  title?: RichText;
   /**@title Subtitulo*/
-  subtitle: string;
+  subtitle?: string;
   /**@title Status*/
-  status: Status;
+  status?: Status;
+}
+export interface Props {
+  statusResponse?: StatusReponse;
 }
 
 const okIcon = (
@@ -28,7 +31,11 @@ const errorIcon = (
   </svg>
 );
 
-export default function Section({ title, subtitle, status = "ok" }: Props) {
+export default function Section(props: Props) {
+  if (!props?.statusResponse?.title) return null;
+  if (!props?.statusResponse?.subtitle) return null;
+  if (!props?.statusResponse?.status) return null;
+  const status = props?.statusResponse?.status;
   const gradientFrom = status === "ok" ? "from-green-200" : status === "warning" ? "from-yellow-200" : "from-red-200";
   const gradientTo = status === "ok" ? "from-green-200" : status === "warning" ? "from-yellow-200" : "from-red-200";
   const statusIcom = status === "ok" ? okIcon : status === "warning" ? warningIcon : errorIcon;
@@ -37,11 +44,11 @@ export default function Section({ title, subtitle, status = "ok" }: Props) {
     <div className="w-full space-y-2 flex justify-center items-center flex-col border border-gray-200 rounded">
       <div className={`w-full p-5 flex items-center gap-2 bg-gradient-to-r ${gradientFrom} from-10% ${gradientTo} to-90%`}>
         {statusIcom}
-        <h2 className="text-2xl">{title}</h2>
+        <h2 className="text-2xl">{props?.statusResponse?.title}</h2>
       </div>
       <div className="w-full flex px-2 py-3 items-center">
-        <p>{subtitle}</p>
+        <p>{props?.statusResponse?.subtitle}</p>
       </div>
     </div>
-  )
+  );
 }

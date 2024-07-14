@@ -23,49 +23,24 @@
         },
         {
           "__resolveType": "site/sections/SecondSection.tsx",
-          "subtitle": "We’re not aware of any issues affecting our systems.",
-          "title": "We’re fully operational"
+          "statusResponse": {
+            "url": "https://status.rdstation.com/proxy/status.rdstation.com",
+            "__resolveType": "site/loaders/SeccondSection/incident.ts"
+          }
         },
         {
           "__resolveType": "site/sections/StatusDetails.tsx",
           "title": "System status",
-          "components": [
-            {
-              "status": "ok",
-              "items": [
-                {
-                  "status": "ok",
-                  "name": "Componente 1",
-                  "description": "Vitrines"
-                }
-              ],
-              "name": "Storefront",
-              "description": "Loja "
-            },
-            {
-              "status": "warning",
-              "items": [
-                {
-                  "status": "error",
-                  "name": "Componente 1",
-                  "description": "Pagamento"
-                }
-              ],
-              "name": "Checkout",
-              "description": "Vendas"
-            }
-          ]
+          "components": {
+            "__resolveType": "SystemStatusIncident"
+          }
         },
         {
           "__resolveType": "site/sections/PastIncidents.tsx",
           "title": "Past Incidents",
-          "components": [
-            {
-              "data": "10, Jul, 2024",
-              "description": "This is a description",
-              "__resolveType": "collections/blog/posts/453f28b246df"
-            }
-          ]
+          "components": {
+            "__resolveType": "IncidentsIncidentIO"
+          }
         }
       ],
       "maxWidth": "max-w-screen-md"

@@ -2,11 +2,11 @@ import { RichText } from "apps/admin/widgets.ts";
 
 type Status = "ok" | "warning" | "error";
 
-interface Component {
+export interface Component {
   /**@title  Nome do Componente */
   name: string;
   /**@title Descrição do Componente */
-  description: string;
+  description?: string;
   /**@title Itens do Componente */
   status: Status;
   /**@title Itens do Componente */
@@ -14,7 +14,7 @@ interface Component {
     /**@title Nome do Item */
     name: string;
     /**@title Descrição do Item */
-    description: string;
+    description?: string;
     /**@title Status do Item */
     status: Status;
   }[];
@@ -128,28 +128,34 @@ export default function Section({
             {component.status === "error" && errorIcon}
             {component.status === "ok" && okIcon}
             <span className="text-black font-black">{component.name}</span>
-            <div className="tooltip" data-tip={component.description}>
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-600">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
-              </svg>
-            </div>
+            {component.description && (
+              <div className="tooltip" data-tip={component.description}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-600">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+                </svg>
+              </div>
+            )}
             <span className="font-normal text-gray-600">{component.items.length} Componentes</span>
           </label>
-          <ul className="collapse-content flex flex-col gap-4">
-            {component.items.map((item) => (
-              <li className="flex gap-2 items-center">
-                {item.status === "warning" && warningIcon}
-                {item.status === "error" && errorIcon}
-                {item.status === "ok" && okIcon}
-                {item.name}
-                <div className="tooltip" data-tip={item.description}>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-600">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
-                  </svg>
-                </div>
-              </li>
-            ))}
-          </ul>
+          {component.items.length > 0 && (
+            <ul className="collapse-content flex flex-col gap-4">
+              {component.items.map((item) => (
+                <li className="flex gap-2 items-center">
+                  {item.status === "warning" && warningIcon}
+                  {item.status === "error" && errorIcon}
+                  {item.status === "ok" && okIcon}
+                  {item.name}
+                  {item.description && (
+                    <div className="tooltip" data-tip={item.description}>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-600">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"></path>
+                      </svg>
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       ))}
     </div>

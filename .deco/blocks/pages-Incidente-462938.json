@@ -17,11 +17,7 @@
         {
           "__resolveType": "site/sections/IncidentPage.tsx",
           "page": {
-            "__resolveType": "blog/loaders/BlogPostPage.ts",
-            "slug": {
-              "__resolveType": "website/functions/requestToParam.ts",
-              "param": "slug"
-            }
+            "__resolveType": "IncidentPageLoader"
           }
         }
       ],
