@@ -46,9 +46,9 @@ export default function BlogPost({ page }: Props) {
       </a>
       <div className="w-full flex flex-col gap-4 max-w-3xl lg:mx-auto">
         <h1 className="text-5xl font-bold">{title}</h1>
-        <div className="flex items-center gap-0">
+        <div className="flex items-center">
           <div className="flex flex-col">
-            <p className="text-base text-sm">{formattedDate}</p>
+            <p className="text-lg">{formattedDate}</p>
           </div>
         </div>
       </div>
