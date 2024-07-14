@@ -134,5 +134,9 @@
   "/.deco/blocks/Header%20RD%20com%20Voltar.json": {
     "blockType": "sections",
     "__resolveType": "site/sections/Header.tsx"
+  },
+  "/.deco/blocks/Neutral%20Nosso%20Black.json": {
+    "blockType": "sections",
+    "__resolveType": "site/sections/Theme/Theme.tsx"
   }
 }

@@ -44,7 +44,7 @@ export default function Section(props: Props) {
     <div className="w-full space-y-2 flex justify-center items-center flex-col border border-gray-200 rounded">
       <div className={`w-full p-5 flex items-center gap-2 bg-gradient-to-r ${gradientFrom} from-10% ${gradientTo} to-90%`}>
         {statusIcom}
-        <h2 className="text-2xl">{props?.statusResponse?.title}</h2>
+        <h2 className="text-primary text-2xl">{props?.statusResponse?.title}</h2>
       </div>
       <div className="w-full flex px-2 py-3 items-center">
         <p>{props?.statusResponse?.subtitle}</p>

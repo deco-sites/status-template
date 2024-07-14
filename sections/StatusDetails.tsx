@@ -119,7 +119,7 @@ export default function Section({
 
   return (
     <div className="w-full border rounded">
-      <h2 className="bg-gray-100 text-2xl p-4">{title}</h2>
+      <h2 className="text-primary bg-gray-100 text-2xl p-4">{title}</h2>
       {components.map((component) => (
         <div className="collapse border-b last:border-b-0">
           <input id={component.name} type="checkbox" />
@@ -127,7 +127,7 @@ export default function Section({
             {component.status === "warning" && warningIcon}
             {component.status === "error" && errorIcon}
             {component.status === "ok" && okIcon}
-            <span className="text-black font-black">{component.name}</span>
+            <span className="text-base font-black">{component.name}</span>
             {component.description && (
               <div className="tooltip" data-tip={component.description}>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-gray-600">
