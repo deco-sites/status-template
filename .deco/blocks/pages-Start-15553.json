@@ -50,6 +50,23 @@
               ],
               "name": "Checkout",
               "description": "Se a página de final de compra está funcionando."
+            },
+            {
+              "status": "warning",
+              "items": [
+                {
+                  "status": "error",
+                  "name": "Records",
+                  "description": "BD"
+                },
+                {
+                  "status": "ok",
+                  "name": "CDN",
+                  "description": "CDN"
+                }
+              ],
+              "name": "Deco",
+              "description": "Hospedagem e Website"
             }
           ]
         },
