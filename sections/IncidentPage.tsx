@@ -41,14 +41,11 @@ export default function BlogPost({ page }: Props) {
 
   return (
     <div className="w-full flex flex-col relative gap-8 container mx-auto px-4 md:px-0 py-12 lg:py-28">
-      <a href="/" hx-boost="true" className="btn bg-transparent border-secondary hover:bg-primary hover:border-primary hover:text-white absolute top-0 left-0 rounded-md">
-        Voltar
-      </a>
       <div className="w-full flex flex-col gap-4 max-w-3xl lg:mx-auto">
         <h1 className="text-5xl font-bold">{title}</h1>
-        <div className="flex items-center gap-0">
+        <div className="flex items-center">
           <div className="flex flex-col">
-            <p className="text-base text-sm">{formattedDate}</p>
+            <p className="text-lg">{formattedDate}</p>
           </div>
         </div>
       </div>

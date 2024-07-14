@@ -13,19 +13,15 @@
       "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
-          "__resolveType": "site/sections/Header.tsx",
-          "url": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/11649/20861c79-6f6a-40a2-8a7a-62ebd26491bf",
-          "altText": "Logo",
-          "link": "https://deco.cx",
-          "openInNewTab": true,
-          "reportLink": "/report",
-          "subscribeLink": "/subscribe"
+          "__resolveType": "Header Default"
         },
         {
           "__resolveType": "site/sections/SecondSection.tsx",
-          "subtitle": "We’re not aware of any issues affecting our systems.",
-          "title": "We’re fully operational",
-          "status": "ok"
+          "statusResponse": {
+            "status": "ok",
+            "title": "We’re fully operational",
+            "subtitle": "We’re not aware of any issues affecting our systems."
+          }
         },
         {
           "__resolveType": "site/sections/StatusDetails.tsx",
@@ -36,24 +32,24 @@
               "items": [
                 {
                   "status": "ok",
-                  "name": "Componente 1",
-                  "description": "Vitrines"
+                  "name": "Vitrines",
+                  "description": "As APIs de busca para vitrines estão funcionando."
                 }
               ],
               "name": "Storefront",
-              "description": "Loja "
+              "description": "Website"
             },
             {
               "status": "warning",
               "items": [
                 {
                   "status": "error",
-                  "name": "Componente 1",
-                  "description": "Pagamento"
+                  "name": "API de Pagamento",
+                  "description": "APIs de Pagamentos de Terceiros"
                 }
               ],
               "name": "Checkout",
-              "description": "Vendas"
+              "description": "Se a página de final de compra está funcionando."
             }
           ]
         },
@@ -62,8 +58,6 @@
           "title": "Past Incidents",
           "components": [
             {
-              "data": "10, Jul, 2024",
-              "description": "This is a description",
               "__resolveType": "collections/blog/posts/453f28b246df"
             }
           ]

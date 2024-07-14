@@ -1,0 +1,11 @@
+{
+  "__resolveType": "site/sections/Header.tsx",
+  "url": "https://d3jj9yc7rgpax4.cloudfront.net/brand-system/logos/rdstation-logo-filled-default-horizontal.svg",
+  "altText": "Logo da RD",
+  "link": "https://rdstation.com",
+  "openInNewTab": true,
+  "reportLink": "https://ajuda.rdstation.com/s/?language=pt_BR",
+  "subscribeLink": "/rd/subscribe",
+  "showGoHome": true,
+  "homePath": "/rd"
+}

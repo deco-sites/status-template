@@ -19,6 +19,12 @@ export interface Props {
 
   /**@title Link do Botão de Inscrever */
   subscribeLink?: string;
+
+  /**@title Exibir Ir Home */
+  showGoHome?: boolean;
+
+  /**@title Home Path */
+  homePath?: string;
 }
 
 export default function Section(props: Props) {
@@ -42,10 +48,18 @@ export default function Section(props: Props) {
     <img src={props.url} alt={props.altText} />
   );
 
+  const voltar =
+    props.showGoHome && props.homePath ? (
+      <a href={props.homePath} hx-boost="false" hx-push-url={props.homePath} className="btn bg-transparent border-secondary hover:bg-primary hover:border-primary hover:text-white mb-4 rounded-md">
+        Ir para home
+      </a>
+    ) : null;
+
   return (
-    <header className="py-4 flex justify-between items-center" hx-boost="true" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-indicator="true" hx-push-url="true">
+    <header className="py-4 flex justify-between items-center" hx-boost="true" hx-target="section[data-manifest-key='site/sections/Container.tsx']" hx-swap="outerHTML" hx-select="section[data-manifest-key='site/sections/Container.tsx']" hx-push-url="true">
       {image}
       <div class="flex gap-2">
+        {voltar}
         {reportProblemLink}
         {subscribeLink}
       </div>

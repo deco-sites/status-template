@@ -1,0 +1,7 @@
+{
+  "__resolveType": "site/sections/SecondSection.tsx",
+  "url": "https://status.rdstation.com/proxy/status.rdstation.com",
+  "statusResponse": {
+    "status": "ok"
+  }
+}
